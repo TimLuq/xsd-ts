@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "umd",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "emitDecoratorMetadata": false,
+        "experimentalDecorators": true,
+        "removeComments": false,
+        "noImplicitAny": true,
+        "noEmitOnError": true,
+        "declaration": true,
+        "rootDir": "src",
+        "outDir": "umd",
+        "lib": [
+            "es2015",
+            "dom"
+        ]
+    },
+    "include": [
+        "src"
+    ]
+}

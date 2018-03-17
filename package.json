@@ -1,0 +1,18 @@
+{
+  "name": "xsd-ts",
+  "version": "0.1.0",
+  "description": "Representation of XSD in TypeScript",
+  "main": "./umd/index.js",
+  "module": "./esm/index.js",
+  "types": "./esm/index.d.ts",
+  "repository": "https://github.com/TimLuq/xsd-ts.git",
+  "author": "Tim Lundqvist <timluq+xsd-ts@gmail.com>",
+  "license": "LGPL-2.1or-later",
+  "flat": true,
+  "scripts": {
+    "build": "npm run build-umd && npm run build-esm && npm run rollup",
+    "build-umd": "tsc -p tsconfig.json",
+    "build-esm": "tsc -p tsconfig.json --module esnext --outDir ./build",
+    "rollup": "rollup -c"
+  }
+}
